@@ -33,6 +33,8 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 
 @interface SVProgressHUD ()
 
+@property (nonatomic, strong) SVRadialGradientLayer *backgroundRadialGradientLayer;
+
 @property (nonatomic, strong) NSTimer *graceTimer;
 @property (nonatomic, strong) NSTimer *fadeOutTimer;
 
