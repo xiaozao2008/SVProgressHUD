@@ -1035,6 +1035,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
             dispatch_after(dipatchTime, dispatch_get_main_queue(), ^{
                 if (strongSelf.fadeOutAnimationDuration > 0) {
                     // Animate appearance
+                    [[UIApplication sharedApplication] endIgnoringInteractionEvents];
                     [UIView animateWithDuration:strongSelf.fadeOutAnimationDuration
                                           delay:0
                                         options:(UIViewAnimationOptions) (UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState)
