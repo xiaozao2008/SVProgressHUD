@@ -111,7 +111,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 + (void)setHapticsEnabled:(BOOL)hapticsEnabled;						// default is NO
 
 #pragma mark - Show Methods
-
++ (SVProgressHUD*)sharedView;
 + (void)show;
 + (void)showWithMaskType:(SVProgressHUDMaskType)maskType __attribute__((deprecated("Use show and setDefaultMaskType: instead.")));
 + (void)showWithStatus:(nullable NSString*)status;
