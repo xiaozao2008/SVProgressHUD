@@ -42,6 +42,12 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 @interface SVProgressHUD : UIView
 
 #pragma mark - Customization
+@property (nonatomic, strong) UIControl *controlView;
+@property (nonatomic, strong) UIView *backgroundView;
+@property (nonatomic, strong) SVRadialGradientLayer *backgroundRadialGradientLayer;
+@property (nonatomic, strong) UIVisualEffectView *hudView;
+@property (nonatomic, strong) UILabel *statusLabel;
+@property (nonatomic, strong) UIImageView *imageView;
 
 @property (assign, nonatomic) SVProgressHUDStyle defaultStyle UI_APPEARANCE_SELECTOR;                   // default is SVProgressHUDStyleLight
 @property (assign, nonatomic) SVProgressHUDMaskType defaultMaskType UI_APPEARANCE_SELECTOR;             // default is SVProgressHUDMaskTypeNone
