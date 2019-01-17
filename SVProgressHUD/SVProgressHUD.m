@@ -36,13 +36,6 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 @property (nonatomic, strong) NSTimer *graceTimer;
 @property (nonatomic, strong) NSTimer *fadeOutTimer;
 
-@property (nonatomic, strong) UIControl *controlView;
-@property (nonatomic, strong) UIView *backgroundView;
-@property (nonatomic, strong) SVRadialGradientLayer *backgroundRadialGradientLayer;
-@property (nonatomic, strong) UIVisualEffectView *hudView;
-@property (nonatomic, strong) UILabel *statusLabel;
-@property (nonatomic, strong) UIImageView *imageView;
-
 @property (nonatomic, strong) UIView *indefiniteAnimatedView;
 @property (nonatomic, strong) SVProgressAnimatedView *ringView;
 @property (nonatomic, strong) SVProgressAnimatedView *backgroundRingView;
